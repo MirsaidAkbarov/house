@@ -1,0 +1,486 @@
+@import "./all__null.scss";
+
+.wrapper {
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1400px;
+    padding: 0 15px;
+}
+
+
+.header {
+}
+.header__body {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__logotip {
+}
+.header__menu {
+    width: 50%;
+    flex: 1 1 100%;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+}
+.sell__house {
+}
+.client__history {
+}
+.seller__number {
+}
+.call__button {
+    display: inline-block;
+    border: 1px solid #121761;
+    border-radius: 10px;
+    padding:  15px 17px ;
+}
+.sell1 {
+    font-weight: 400;
+font-size: 20px;
+line-height: 24px;
+color: #121761;
+}
+
+.sell {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #475658;
+}
+
+@media (max-width: 880px) {
+
+
+    .sell__house, .client__history, .call__button {
+        display: none;
+    }
+    .header__menu {
+        display: flex;
+        justify-content: end;
+        margin-left: 0px;
+    }
+    
+
+}
+
+.footer__body {
+    background: #475658;
+
+}
+
+.all__footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.container {
+}
+.footer__logo {
+}
+.footer__contacts {
+}
+.footer__location {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+
+}
+.footer__text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #FFFFFF;
+
+}
+.footer__phonenumber {
+    display: flex;
+    gap: 15px;
+
+}
+.footer__worktime {
+
+}
+.work__time {
+    display: flex;
+    gap: 15px;
+    padding: 15px 0 10px 0  ;
+
+}
+.footer__img {
+}
+
+.footer__location1, .footer__phonenumber1 {
+    display: none;
+}
+
+.footer__line, .footer__secondline {
+    display: none;
+}
+
+@media (max-width: 880px) {
+
+    .all__footer {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .footer__logo {
+        display: none;
+    }
+
+
+    .moskva {
+
+        flex-wrap: wrap;
+    }
+    @media (max-width: 404px) {
+        .all__footer {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .footer__contacts {
+            display: none;
+        }
+
+        .footer__location1 {
+            display: block;
+            order: 5;
+            display: flex;
+            margin: 24px 0 25px 0;
+        }
+
+        .footer__line {
+            display: block;
+            width: 100%;
+            border: 0.1px solid #FFFFFF;
+            order: 2;
+        }
+        .footer__secondline {
+            display: block;
+            width: 100%;
+            border: 0.1mm solid #FFFFFF;
+            order: 4;
+        }
+
+        .footer__phonenumber1 {
+            margin: 24px 0 25px 0;
+            display: block;
+            order: 1;
+            display: flex;
+        }
+        .footer__worktime {
+            margin: 24px 0 25px 0;
+
+            order: 3;
+        }
+    }
+
+
+}
+
+.main__body {
+    background: #D44B4B;
+}
+.about__house {
+    display: grid;
+    grid-template-columns: 45% 55%;
+}
+
+.about__documents {
+    padding: 80px 0 100px 0;
+}
+.terminal__text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #FFFFFF;
+
+}
+.building {
+    width: 100%;
+    height: 80%;
+}
+.document__text1 {
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 53px;
+    color: #FFFFFF;
+    margin-bottom: 30px;
+}
+.doc, .doc1 {
+    border: 1px solid #FFFFFF;
+    border-radius: 20px;
+    padding: 3px 5px;
+
+}
+.know__more {
+    display: inline-block;
+    border-radius: 10px;
+    padding: 20px 80px;
+    background-color: #FFFFFF;
+
+}
+.know__text {
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 28px;
+    text-align: center;
+    color: #475658;
+
+}
+.about__building {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.know__more1 {
+    display: none;
+}
+
+@media (max-width: 880px) {
+
+    .about__house {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(100%, 1fr))  
+    }
+    .know__more {
+        display: none;
+    }
+    .know__more1 {
+        display: block;
+
+    display: inline-block;
+    border-radius: 20px;
+        padding: 20px 0px;
+    background-color: #FFFFFF;
+    }
+
+
+    .document__text {
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 25px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+    .terminal__text {
+        text-align: center;
+    }
+    .doc, .doc1 {
+        display: none;
+    }
+    .about__documents {
+        padding: 20px 0 30px 0 
+    }
+}
+
+
+
+.document__section {
+    padding-top: 145px;
+    gap: 60px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr))  
+}
+
+
+.document__get {
+    position: relative;
+    border: 1px solid #E0E0E0;
+    padding: 28px 50px;
+    border-radius: 10px 30px 30px 30px;
+}
+.document__text {
+    border: 1px solid #E0E0E0;
+    border-radius: 50px;
+    padding: 30px 30px;
+
+}
+.doc__text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #475658;
+}
+.document__img {
+
+}
+.img__section {
+    width: 100%;
+}
+
+
+.img__section1 {
+    position: absolute;
+    left: 220px;
+    top: 130px;
+}
+.doc__text1 {
+    position: absolute;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 20px;
+    color: #03073C;
+    left: 0;
+    top: -10px;
+}
+
+
+
+.risk__manegment {
+}
+.container {
+}
+.main__managment {
+    margin: 204px 0 290px 0;
+
+}
+.contain {
+    margin: 0 auto;
+    max-width: 900px;
+    
+    
+}
+.manegment__text {
+    margin-bottom: 70px;
+}
+.main__text {
+}
+.text__style {
+    font-weight: 400;
+    font-size: 45px;
+    line-height: 60px;
+    text-align: center;
+    color: #03073C;
+}
+.span__text {
+    border: 1px solid #D44B4B;
+    border-radius: 20px;
+}
+.buysell__house {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(40%, 1fr))  
+
+}
+.buy__sellimg {
+}
+.sellimg {
+    border-radius: 20px 0 0 20px;
+    background-color: #D44B4B;
+
+}
+
+.three {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #475658;
+}
+.span__three{
+    color: #D44B4B;
+}
+.buy__selltext {
+}
+.three__mintext {
+    margin: 67px 0 74px 0;
+}
+.easy__sellhouse {
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 45px;
+    color: #03073C;
+    margin-bottom: 30px;
+}
+.start__text {
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 28px;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #D44B4B;
+    border-radius: 10px;
+    padding: 22px 0;
+    margin-bottom: 63px;
+
+}
+.easy__sellbutton {
+    display: inline;
+}
+.instuctions {
+}
+.instruction__text {
+    font-weight: 400;
+font-size: 16px;
+line-height: 26px;
+color: #475658;
+margin-bottom: 30px;
+}
+li {
+    
+    font-weight: 400;
+font-size: 16px;
+line-height: 26px;
+color: #475658;
+}
+.ul__styles {
+    list-style-type:text;
+    padding-left: 30px;
+}
+
+.buysell__house1 {
+    display: none;
+}
+
+@media (max-width: 620px) {
+    .buysell__house {
+        display: none;
+    }
+    .buysell__house1 {
+        display: block;
+    }
+    .buy__sellimg1 {
+    }
+    .sellimg1 {
+        width: 100%;
+        border-radius: 20px  20px 0 0;
+        background-color: #D44B4B;
+    
+    }
+
+    .three__mintext1 {
+        margin: 24px 0 15px 0;
+    }
+    
+    .main__managment {
+        margin: 60px 0 60px 0;
+    }
+
+    .text__style {
+        font-weight: 400;
+    font-size: 25px;
+    line-height: 25px;
+    text-align: center;
+    color: #03073C;
+    }
+    .three, .instruction__text {
+        text-align: center;
+    }
+
+    .easy__sellhouse {
+        text-align: center;
+        font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    }
+
+
+}
